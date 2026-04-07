@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Canvas} from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import '../style.css'
@@ -15,7 +15,9 @@ const ProjectSection = () => {
     <Canvas camera={{fov:45 }}>
       <OrbitControls enableZoom={false} />
       <ambientLight />
-      <Cylinder />   
+      <Suspense fallback={null}>
+        <Cylinder />   
+      </Suspense>
         <EffectComposer>
           <Noise premultiply blendFunction={BlendFunction.ADD} />
         </EffectComposer>

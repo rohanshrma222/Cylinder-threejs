@@ -14,16 +14,16 @@ import AnimatedText from "./components/AnimatedText"
 export default function Home() {
   return (
    <main className= "flex min-h-screen flex-col bg-[#121212]">
-    <Navbar />
+    {/* <Navbar /> */}
     <div class='h-dvh mt-24 mx-auto px-6 py-4'>
       <HeroSection />
       <AboutSection />
-      {/* <App /> */}
+      <App />
       <AnimatedText />
       {/* <Project /> */}
       <div class='h-screen w-screen  mx-auto px-6  bg-gradient-to-r from-stone-900 via-indigo-900 to-stone-900'>
-      <ProjectSection />
-    </div>
+        <ProjectSection />
+      </div> 
       <EmailSection />
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from 'next-themes'
+import { Providers } from './provider';
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -22,7 +23,9 @@ export default function Layout({ children }) {
     <html  suppressHydrationWarning>
         <head />
       <body>
-      <ThemeProvider>{children}</ThemeProvider>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

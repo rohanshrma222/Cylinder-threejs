@@ -1,12 +1,13 @@
+'use client';
 import React, { useRef, useEffect } from 'react';
 import { useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 import Project from './Project';
-import { Html,Text} from '@react-three/drei';
+import { Text } from '@react-three/drei';
 
 const Cylinder = () => {
     const meshRef = useRef(); // Reference to the cylinder mesh
-    const tex = useTexture('./images/slider-image.png');
+    const tex = useTexture('/images/slider-image.png');
 
     useEffect(() => {
         const handleScroll = (event) => {

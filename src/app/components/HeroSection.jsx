@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className = 'col-span-7 place-self-center text-center sm:text-left'>
           <h1 className='flex text-white   mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
-              Hello,I'm{" "}     
+              Hello,I&apos;m{" "}     
             </span> 
             <br></br>
           </h1>
@@ -36,7 +36,7 @@ const HeroSection = () => {
           </h1>
          
           <p className='text-[ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-             Hi! I'm Rohan,a full-stack web developer for the passion for creating engaging 
+             Hi! I&apos;m Rohan,a full-stack web developer for the passion for creating engaging 
              user experience.
           </p>
           {/* <div>
